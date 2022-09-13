@@ -57,6 +57,7 @@ class Estudiante
       $nuevaConexion = new conexion();
       $nuevoComando = $nuevaConexion->Conectar();
       $nuevoComando->query("Update estudiantes set apellidos="."'".$apel."',nombre="."'".$nom."',direccion="."'".$dir."',telefono="."'".$tel."'"." where idEstudiante = $id");
+      header("Location: VistaEstudiante.php");    
     }
 
     public function EliminarEstudiante($id,$apel,$nom,$dir,$tel)
@@ -64,5 +65,6 @@ class Estudiante
       $nuevaConexion = new conexion();
       $nuevoComando = $nuevaConexion->Conectar();
       $nuevoComando->query("Delete From estudiantes where idEstudiante = $id");
+      header("Location: VistaEstudiante.php");
     }
 }
