@@ -54,7 +54,7 @@
         </div>
         
         <p>
-            <input type="submit" value="Guardar Registro" class="btn btn-primary">
+            <input type="submit" value="Guardar Registro" name="btnGuardar" class="btn btn-primary">
         </p>
     </form>
     </div>
